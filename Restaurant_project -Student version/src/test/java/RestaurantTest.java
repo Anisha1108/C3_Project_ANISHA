@@ -67,4 +67,11 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+       @Test
+    public void when_selecting_item_OrderTotal_method_should_return_total_price(){
+
+       
+        assertEquals(90,restaurant.OrderTotal("Sweet corn soup", "Vegetable lasagne"));
+
+    }
 }
