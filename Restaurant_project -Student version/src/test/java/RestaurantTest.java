@@ -24,6 +24,7 @@ class RestaurantTest {
         //WRITE UNIT TEST CASE HERE
         Restaurant res= Mockito.spy(restaurant);
         Mockito.when(res.isRestaurantOpen()).thenReturn(true);
+        assertEquals("10:35:00", true);
 
 
 
@@ -34,6 +35,7 @@ class RestaurantTest {
         //WRITE UNIT TEST CASE HERE
         Restaurant res= Mockito.spy(restaurant);
         Mockito.when(res.isRestaurantOpen()).thenReturn(false);
+        assertEquals("10:29:00", false);
 
     }
 
